@@ -1,0 +1,1897 @@
+<!doctype html>
+<html lang="zh-CN"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <meta name="keywords" content="Chrome插件,谷歌浏览器插件,Chrome商店,浏览器插件,谷歌应用商店,插件网,谷歌商店"> 
+  <meta name="description" content="扩展迷-专业的Chrome插件网,提供Chrome商店/谷歌应用商店里各类Chrome插件下载服务,拥有最好用的谷歌浏览器插件,最全面的Chrome插件资源,使用Chrome插件可以为谷歌浏览器带来功能性的扩展;更多优秀Chrome插件的介绍/推荐下载,以及谷歌插件相关资讯,尽在extfans.com."> 
+  <meta name="csrf-token" content="kXb84FlVui3umKBvGXf5ajElLBJk3q2y0f0Qu8TL"> 
+  <link rel="canonical" href=""> 
+  <title>扩展迷-Chrome插件/扩展,谷歌浏览器插件,谷歌应用商店插件推荐与下载</title> 
+  <link href="static/site/src/css/base.css?v=3.1.4" rel="stylesheet"> 
+  <link href="static/site/src/css/common.css?v=3.1.4" rel="stylesheet"> 
+  <link href="static/site/src/css/iconfont.css?v=3.1.4" rel="stylesheet"> 
+  <link href="static/site/src/css/index.css?v=3.1.4" rel="stylesheet"> 
+  <link rel="icon" href="favicon.ico?v=3.1.4"> 
+  <script src="static/site/src/js/jquery/2.1.1/jquery.min.js?v=3.1.4"></script> 
+  <script>$.ajaxSetup({headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')}});</script> 
+ </head> 
+ <body data-client-ip="180.143.17.248" data-client-devicepixelratio="1.5"> <!-- 头部 --> 
+  <div class="header"> 
+   <div class="header-w clearfix"> 
+    <div class="logo"> <a href="https://www.extfans.com/" title="Chrome插件扩展下载网"> <span class="logo-img">Chrome插件扩展下载网</span> <p class="logo-text">Chrome插件扩展下载网</p> </a> 
+    </div> 
+    <div class="avatar"> <span id="J_login"><img src="static/site/src/img/avatar.png?v=3.1.4" class="auth_to_login_trigger account_avatar_img" alt="用户头像"></span> 
+    </div> 
+    <div class="search"> <span class="search-icon"><i></i></span> 
+     <form id="searForm" onsubmit="return searching();"> 
+      <input type="text" id="search-input-item" value="" placeholder="搜索扩展或文章" class="search-input" autocomplete="off"> 
+     </form> 
+    </div> 
+    <div class="nav"> 
+     <ul> 
+      <li><a href="https://www.extfans.com/" data-route-name="index,tag.index,search.lists,search.result,search.index,tag.result" title="首页">首页</a></li> 
+      <li class="cur"> <a href="https://www.extfans.com/all/" title="全部扩展">全部扩展<i class="menu-icon"></i></a> 
+       <div class="subnav"> <a href="https://www.extfans.com/all/" style="display: none" title="全部扩展" data-route-name="top">全部扩展</a> <a href="https://www.extfans.com/communication/" data-route-name="extension.categories.index,extension.categories.detail" data-category="communication" title="社交通讯插件">社交通讯</a> <a href="https://www.extfans.com/fun/" data-route-name="extension.categories.index,extension.categories.detail" data-category="fun" title="游戏娱乐插件">游戏娱乐</a> <a href="https://www.extfans.com/productivity/" data-route-name="extension.categories.index,extension.categories.detail" data-category="productivity" title="生产工具插件">生产工具</a> <a href="https://www.extfans.com/accessibility/" data-route-name="extension.categories.index,extension.categories.detail" data-category="accessibility" title="无障碍插件">无障碍</a> <a href="https://www.extfans.com/shopping/" data-route-name="extension.categories.index,extension.categories.detail" data-category="shopping" title="购物插件">购物插件</a> <a href="https://www.extfans.com/photos/" data-route-name="extension.categories.index,extension.categories.detail" data-category="photos" title="照片插件">照片插件</a> <a href="https://www.extfans.com/search-tools/" data-route-name="extension.categories.index,extension.categories.detail" data-category="search-tools" title="搜索工具插件">搜索工具</a> <a href="https://www.extfans.com/web-development/" data-route-name="extension.categories.index,extension.categories.detail" data-category="web-development" title="开发者工具插件">开发者工具</a> <a href="https://www.extfans.com/news/" data-route-name="extension.categories.index,extension.categories.detail" data-category="news" title="新闻天气插件">新闻天气</a> <a href="https://www.extfans.com/sports/" data-route-name="extension.categories.index,extension.categories.detail" data-category="sports" title="体育插件">体育插件</a> <a href="https://www.extfans.com/blogging/" data-route-name="extension.categories.index,extension.categories.detail" data-category="blogging" title="博客插件">博客插件</a> <a href="https://www.extfans.com/chrome-app/" data-route-name="extension.categories.index,extension.categories.detail" data-category="chrome-app" title="谷歌App插件">谷歌App插件</a> 
+       </div> </li> 
+      <li><a href="https://www.extfans.com/hot/" title="热门插件" data-route-name="hot">热门插件</a></li> 
+      <li class="cur"> <a href="https://www.extfans.com/top/" title="分类排行">分类排行<i class="menu-icon"></i></a> 
+       <div class="subnav"> <a href="https://www.extfans.com/top/" style="display: none" title="分类排行" data-route-name="top">分类排行</a> <a href="https://www.extfans.com/top/communication/" data-route-name="top.index,top.lists" data-category="communication" title="社交通讯插件">社交通讯</a> <a href="https://www.extfans.com/top/fun/" data-route-name="top.index,top.lists" data-category="fun" title="游戏娱乐插件">游戏娱乐</a> <a href="https://www.extfans.com/top/productivity/" data-route-name="top.index,top.lists" data-category="productivity" title="生产工具插件">生产工具</a> <a href="https://www.extfans.com/top/accessibility/" data-route-name="top.index,top.lists" data-category="accessibility" title="无障碍插件">无障碍</a> <a href="https://www.extfans.com/top/shopping/" data-route-name="top.index,top.lists" data-category="shopping" title="购物插件">购物插件</a> <a href="https://www.extfans.com/top/photos/" data-route-name="top.index,top.lists" data-category="photos" title="照片插件">照片插件</a> <a href="https://www.extfans.com/top/search-tools/" data-route-name="top.index,top.lists" data-category="search-tools" title="搜索工具插件">搜索工具</a> <a href="https://www.extfans.com/top/web-development/" data-route-name="top.index,top.lists" data-category="web-development" title="开发者工具插件">开发者工具</a> <a href="https://www.extfans.com/top/news/" data-route-name="top.index,top.lists" data-category="news" title="新闻天气插件">新闻天气</a> <a href="https://www.extfans.com/top/sports/" data-route-name="top.index,top.lists" data-category="sports" title="体育插件">体育插件</a> <a href="https://www.extfans.com/top/blogging/" data-route-name="top.index,top.lists" data-category="blogging" title="博客插件">博客插件</a> <a href="https://www.extfans.com/top/chrome-app/" data-route-name="top.index,top.lists" data-category="chrome-app" title="谷歌App插件">谷歌App插件</a> 
+       </div> </li> 
+      <li><a href="https://www.extfans.com/articles/" data-route-name="articles.lists,articles.detail" title="文章资讯">文章资讯</a></li> 
+      <li><a href="https://www.extfans.com/tampermonkey/" data-route-name="tampermonkey.lists,tampermonkey.detail" title="油猴脚本">油猴脚本</a></li> 
+      <li><a href="https://www.extfans.com/installation/" data-route-name="installation" target="_blank" title="安装教程">安装教程</a></li> 
+     </ul> 
+    </div> 
+   </div> 
+  </div> <!-- 轮播图 --> 
+  <div class="i-banner w clearfix"> 
+   <div class="i-banner-left fl "> 
+    <div class="i-banner-play"> 
+     <div class="i-banner-imgview  active "> <a href="https://www.extfans.com/articles/1286/" target="_blank" title="那些Chrome不为人知的高效隐藏技巧，让你的浏览器好用10倍" style="background-image: url('https://extension.extfans.com/extfans-v2/article/153765568a3f8c2f756c0444fb5482.png?imageView2/2/w/1170/h/540/q/100')"></a> 
+     </div> 
+     <div class="i-banner-imgview "> <a href="https://www.extfans.com/articles/1005/" target="_blank" title="去除Chrome浏览器「请停用以开发者模式运行」提示的解决办法" style="background-image: url('https://extension.extfans.com/extfans-v2/article/57c042ff895cc0b8e44ef8d8513178.png?imageView2/2/w/1170/h/540/q/100')"></a> 
+     </div> 
+     <div class="i-banner-imgview "> <a href="https://www.extfans.com/articles/983/" target="_blank" title="最新教程：扩展迷上下载的插件如何安装到Chrome浏览器上？" style="background-image: url('https://extension.extfans.com/extfans-v2/article/aea11ad6c3a53d393ea20d636f19a9.png?imageView2/2/w/1170/h/540/q/100')"></a> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="i-banner-right fr img-btn-box"> 
+    <div class="img-btn-item  active "> <i style="background-image: url('https://extension.extfans.com/extfans-v2/article/153765568a3f8c2f756c0444fb5482.png?imageView2/2/w/900/h/360/q/100')"></i> 
+     <p class="img-btn-text"> <span class="hr"></span> <span class="text">那些Chrome不为人知的高效隐藏技巧，让你的浏览器好用10倍</span> </p> 
+    </div> 
+    <div class="img-btn-item "> <i style="background-image: url('https://extension.extfans.com/extfans-v2/article/57c042ff895cc0b8e44ef8d8513178.png?imageView2/2/w/900/h/360/q/100')"></i> 
+     <p class="img-btn-text"> <span class="hr"></span> <span class="text">去除Chrome浏览器「请停用以开发者模式运行」提示的解决办法</span> </p> 
+    </div> 
+    <div class="img-btn-item "> <i style="background-image: url('https://extension.extfans.com/extfans-v2/article/aea11ad6c3a53d393ea20d636f19a9.png?imageView2/2/w/900/h/360/q/100')"></i> 
+     <p class="img-btn-text"> <span class="hr"></span> <span class="text">最新教程：扩展迷上下载的插件如何安装到Chrome浏览器上？</span> </p> 
+    </div> 
+   </div> 
+  </div> <!-- 主体内容 --> 
+  <div class="main-Wrapper w clearfix"> 
+   <div class="side-left fl"> <!-- 编辑推荐 --> 
+    <div class="ext-list"> 
+     <h2 class="classify-title">编辑推荐Chrome插件</h2> 
+     <div class="classify-details"> 
+      <ul class="classify-details-list clearfix"> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/cdonnmffkdaoajfknoeeecmchibpmkmg/" target="_blank" title="沙拉查词-聚合词典划词翻译"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/cdonnmffkdaoajfknoeeecmchibpmkmg/icon/icon.png?imageView2/2/w/96/h/96/q/100')"> 
+          </div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>沙拉查词-聚合词典划词翻译</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.93007">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> Saladict 沙拉查词是一款专业划词翻译扩展，为交叉阅读而生。大量权威词典涵盖中英日韩法德西语，支持复杂的划词操作、网页翻译、生词本、PDF，以及 Vimium 全键盘操作。 </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/search-tools/kpbnombpnpcffllnianjibmpadjolanh/" target="_blank" title="哔哩哔哩助手：bilibili综合辅助扩展"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/kpbnombpnpcffllnianjibmpadjolanh/icon/icon.png?imageView2/2/w/96/h/96/q/100')"> 
+          </div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>哔哩哔哩助手：bilibili综合辅助扩展</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.68072">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> 哔哩哔哩弹幕网辅助扩展，拥有视频区和直播区的人性化功能 </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/dbfmnekepjoapopniengjbcpnbljalfg/" target="_blank" title="Infinity 新标签页"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/dbfmnekepjoapopniengjbcpnbljalfg/icon/icon.png?imageView2/2/w/96/h/96/q/100')"> 
+          </div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>Infinity 新标签页</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.50927">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> 百万用户选择的新标签页，自由添加网站图标，云端高清壁纸，快速访问书签、天气、笔记、待办事项、扩展管理与历史记录。 </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/kejppjboemkbampcomibgpenbmdpimol/" target="_blank" title="超星学习通辅助插件"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/kejppjboemkbampcomibgpenbmdpimol/icon/icon.png?t=1588049784367?imageView2/2/w/96/h/96/q/100')"> 
+          </div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>超星学习通辅助插件</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="5">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> 你懂的（同时支持智慧树），源代码：https://github.com/lifegpc/fuckchaoxing </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/search-tools/ldipcbpaocekfooobnbcddclnhejkcpn/" target="_blank" title="Google学术搜索按钮"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/ldipcbpaocekfooobnbcddclnhejkcpn/icon/icon.png?imageView2/2/w/96/h/96/q/100')"> 
+          </div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>Google学术搜索按钮</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.55911">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> 可让您在浏览网页时查询学术文章。 </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/chphlpgkkbolifaimnlloiipkdnihall/" target="_blank" title="OneTab - 节省浏览器内存"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/chphlpgkkbolifaimnlloiipkdnihall/icon/icon.png?imageView2/2/w/96/h/96/q/100')"> 
+          </div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>OneTab - 节省浏览器内存</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.56904">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> 节省高达95％的内存，并减轻标签页混乱现象 </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/mfnkflidjnladnkldfonnaicljppahpg/" target="_blank" title="GitHub加速"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/mfnkflidjnladnkldfonnaicljppahpg/icon/icon.png?t=1585390503701?imageView2/2/w/96/h/96/q/100')"> 
+          </div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>GitHub加速</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="5">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> 国内Github下载很慢，用上了这个插件后，下载速度嗖嗖嗖的~！’ </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/nmgpnfccjfjhdenioncabecepjcmdnjg/" target="_blank" title="FasterChrome 插件"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/nmgpnfccjfjhdenioncabecepjcmdnjg/icon/icon.png?imageView2/2/w/96/h/96/q/100')"> 
+          </div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>FasterChrome</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.36364">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> Navigate the web faster. </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/kidibbfcblfbbafhnlanccjjdehoahep/" target="_blank" title="二箱 以图搜图"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/kidibbfcblfbbafhnlanccjjdehoahep/icon/icon.png?imageView2/2/w/96/h/96/q/100')"> 
+          </div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>二箱 以图搜图</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.63333">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> 一个实用的工具箱！多引擎以图搜图+提取图片+截图搜索+HTML5视频控制 </p> </a> </li> 
+      </ul> 
+     </div> 
+    </div> <!-- 热门插件 --> 
+    <div class="ext-list"> 
+     <h2 class="classify-title huo-ext">热门Chrome插件</h2> 
+     <div class="classify-details"> 
+      <ul class="classify-details-list clearfix"> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/dhdgffkkebhmkfjojejmpbldmpobfkfo/" target="_blank" title="Tampermonkey：用户脚本管理器（油猴）"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/dhdgffkkebhmkfjojejmpbldmpobfkfo/icon/icon.png?t=0?imageView2/2/w/96/h/96/q/100')"></div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>Tampermonkey：用户脚本管理器（油猴）</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.71432">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> The world's most popular userscript manager </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/aapbdbdomjkkjkaonfhkkikfgjllcleb/" target="_blank" title="Google 翻译（谷歌网页翻译）"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/aapbdbdomjkkjkaonfhkkikfgjllcleb/icon/icon.png?imageView2/2/w/96/h/96/q/100')"></div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>Google 翻译（谷歌网页翻译）</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.36127">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> 浏览网页时可轻松查看翻译版本。由Google翻译小组提供。 </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/nnnkddnnlpamobajfibfdgfnbcnkgngh/" target="_blank" title="Infinity 新标签页(Pro)"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/nnnkddnnlpamobajfibfdgfnbcnkgngh/icon/icon.png?imageView2/2/w/96/h/96/q/100')"></div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>Infinity 新标签页(Pro)</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.956">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> 百万用户选择的新标签页和快速拨号，自由添加网站图标，云端高清壁纸，快速访问书签、天气、笔记、待办事项、扩展管理与历史记录。使你的主页和开始页更加美观和易用。 </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/cfhdojbkjhnklbpkdaibdccddilifddb/" target="_blank" title="Adblock Plus - 免费广告拦截插件"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/cfhdojbkjhnklbpkdaibdccddilifddb/icon/icon.png?imageView2/2/w/96/h/96/q/100')"></div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>Adblock Plus - 免费广告拦截插件</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.43949">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> Adblock Plus 是拥有超过 5 亿次下载的全球最受欢迎的广告拦截软件之一。 </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/ngpampappnmepgilojfohadhhmbhlaek/" target="_blank" title="IDM Integration Module：网络下载助手"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/ngpampappnmepgilojfohadhhmbhlaek/icon/icon.png?t=1575513963204?imageView2/2/w/96/h/96/q/100')"></div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>IDM Integration Module：网络下载助手</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.36278">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> 正版idm下载器正式登陆扩展迷商店。Download files with Internet Download Manager </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/mciiogijehkdemklbdcbfkefimifhecn/" target="_blank" title="Chrono下载管理器"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/mciiogijehkdemklbdcbfkefimifhecn/icon/icon.png?imageView2/2/w/96/h/96/q/100')"></div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>Chrono下载管理器</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.37936">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> 做Chrome浏览器中最好的下载管理器 </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/nffaoalbilbmmfgbnbgppjihopabppdk/" target="_blank" title="Video Speed Controller-视频加速播放"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/nffaoalbilbmmfgbnbgppjihopabppdk/icon/icon.png?imageView2/2/w/96/h/96/q/100')"></div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>Video Speed Controller-视频加速播放</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.6249">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> 使用快速快捷键加快，放慢速度，前进和后退任何HTML5视频。 </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/bfcbfobhcjbkilcbehlnlchiinokiijp/" target="_blank" title="bilibili哔哩哔哩下载助手插件 - B站下载助手"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/bfcbfobhcjbkilcbehlnlchiinokiijp/icon/icon.png?imageView2/2/w/96/h/96/q/100')"></div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>bilibili哔哩哔哩下载助手插件 - B站下载助手</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.95311">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> bilibili 哔哩哔哩 B站 下载助手 帮你下载版权受限（能看不能缓存）的 番剧 视频 </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/fpdnjdlbdmifoocedhkighhlbchbiikl/" target="_blank" title="广告终结者"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/fpdnjdlbdmifoocedhkighhlbchbiikl/icon/icon.png?imageView2/2/w/96/h/96/q/100')"></div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>广告终结者</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.37603">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> 清除网页上的所有广告：浮动广告，购物广告，恶意弹窗，跟踪代码，视频广告。让你浏览网页更快更清爽。广告终结者，你唯一需要的广告插件 </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/jinjaccalgkegednnccohejagnlnfdag/" target="_blank" title="暴力猴 - 浏览器脚本管理器"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/jinjaccalgkegednnccohejagnlnfdag/icon/icon.png?imageView2/2/w/96/h/96/q/100')"></div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>暴力猴 - 浏览器脚本管理器</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.65261">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> 为浏览器提供用户脚本支持。 </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/accessibility/jfedfbgedapdagkghmgibemcoggfppbb/" target="_blank" title="猫抓 - 网页媒体嗅探工具"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/jfedfbgedapdagkghmgibemcoggfppbb/icon/icon.png?imageView2/2/w/96/h/96/q/100')"></div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>猫抓 - 网页媒体嗅探工具</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.75517">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> 网页媒体嗅探工具 </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/eagiakjmjnblliacokhcalebgnhellfi/" target="_blank" title="Chrome清理大师：一键清理浏览器垃圾，让你的Chrome更快"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/eagiakjmjnblliacokhcalebgnhellfi/icon/icon.png?imageView2/2/w/96/h/96/q/100')"></div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>Chrome清理大师：一键清理浏览器垃圾，让你的Chrome更快</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.87036">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> 一键清理您的浏览器缓存和垃圾，保护您的隐私，并使您的浏览器更快，更高效 </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/gighmmpiobklfepjocnamgkkbiglidom/" target="_blank" title="AdBlock-最佳广告拦截工具"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/gighmmpiobklfepjocnamgkkbiglidom/icon/icon.png?imageView2/2/w/96/h/96/q/100')"></div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>AdBlock-最佳广告拦截工具</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.52668">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> 最受欢迎的 Chrome 扩展，拥有超过 6000 万用户！拦截网页上的广告。 </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/bgnkhhnnamicmpeenaelnjfhikgbkllg/" target="_blank" title="AdGuard 广告拦截器"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/bgnkhhnnamicmpeenaelnjfhikgbkllg/icon/icon.png?imageView2/2/w/96/h/96/q/100')"></div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>AdGuard 广告拦截器</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.68829">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> 广告拦截扩展对抗广告和弹出窗口。拦截 Facebook，Youtube 和所有其它网站的广告。 </p> </a> </li> 
+       <li class="classify-details-item"> <a class="classify-details-item-link" href="https://www.extfans.com/productivity/cdonnmffkdaoajfknoeeecmchibpmkmg/" target="_blank" title="沙拉查词-聚合词典划词翻译"> 
+         <div class="clearfix"> 
+          <div class="classify-details-picturl fl" style="background-image: url('https://extension.extfans.com/extension/cdonnmffkdaoajfknoeeecmchibpmkmg/icon/icon.png?imageView2/2/w/96/h/96/q/100')"></div> 
+          <div class="fr classify-details-item-right"> 
+           <h3 class="classify-details-item-title"> <span>沙拉查词-聚合词典划词翻译</span> </h3> 
+           <div class="classify-details-grade" data-extension-star="4.93007">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+           </div> 
+          </div> 
+         </div> <p class="classify-details-item-text"> Saladict 沙拉查词是一款专业划词翻译扩展，为交叉阅读而生。大量权威词典涵盖中英日韩法德西语，支持复杂的划词操作、网页翻译、生词本、PDF，以及 Vimium 全键盘操作。 </p> </a> </li> 
+      </ul> <a href="https://www.extfans.com/hot/" class="more" target="_blank" title="查看更多">查看更多</a> 
+     </div> 
+    </div> <!-- 文章资讯 --> 
+    <div class="ext-list"> 
+     <h2 class="classify-title article-info">文章资讯</h2> 
+     <div class="acticle-box"> 
+      <ul class="acticle-list clearfix"> 
+       <li class="acticle-item"> <a href="https://www.extfans.com/articles/1403/" target="_blank" title="Avast Online Security插件，Chrome网页安全浏览防护工具"> 
+         <div class="acticle-item-pic" style="background-image: url('https://extension.extfans.com/extfans-v2/article/8ffd91fb1c06d358f55014e0d15b5e.jpeg?imageView2/2/w/447/h/282/q/100')"></div> 
+         <div class="acticle-item-content"> 
+          <h3 class="acticle-item-title">Avast Online Security插件，Chrome网页安全浏览防护工具</h3> 
+          <div class="acticle-item-glance-over"> <span class="looks">16</span> <span class="time">2020-10-09</span> 
+          </div> 
+         </div> </a> </li> 
+       <li class="acticle-item"> <a href="https://www.extfans.com/articles/1402/" target="_blank" title="Desmos Graphing Calculator插件，在线可视化图形计算器"> 
+         <div class="acticle-item-pic" style="background-image: url('https://extension.extfans.com/extfans-v2/article/a6c6535a7c4ebe1268eec57711927d.jpeg?imageView2/2/w/447/h/282/q/100')"></div> 
+         <div class="acticle-item-content"> 
+          <h3 class="acticle-item-title">Desmos Graphing Calculator插件，在线可视化图形计算器</h3> 
+          <div class="acticle-item-glance-over"> <span class="looks">22</span> <span class="time">2020-10-09</span> 
+          </div> 
+         </div> </a> </li> 
+       <li class="acticle-item"> <a href="https://www.extfans.com/articles/1401/" target="_blank" title="M站优化油猴脚本，BimiBimi弹幕视频网站增强及广告去除"> 
+         <div class="acticle-item-pic" style="background-image: url('https://extension.extfans.com/extfans-v2/article/11edd33c74090512b41d66251f5d94.png?imageView2/2/w/447/h/282/q/100')"></div> 
+         <div class="acticle-item-content"> 
+          <h3 class="acticle-item-title">M站优化油猴脚本，BimiBimi弹幕视频网站增强及广告去除</h3> 
+          <div class="acticle-item-glance-over"> <span class="looks">38</span> <span class="time">2020-10-09</span> 
+          </div> 
+         </div> </a> </li> 
+       <li class="acticle-item"> <a href="https://www.extfans.com/articles/1400/" target="_blank" title="Read&amp;Write for Google Chrome插件，在线英文阅读写作工具"> 
+         <div class="acticle-item-pic" style="background-image: url('https://extension.extfans.com/extfans-v2/article/94aa05ebad3e99791701469a191f85.png?imageView2/2/w/447/h/282/q/100')"></div> 
+         <div class="acticle-item-content"> 
+          <h3 class="acticle-item-title">Read&amp;Write for Google Chrome插件，在线英文阅读写作工具</h3> 
+          <div class="acticle-item-glance-over"> <span class="looks">23</span> <span class="time">2020-10-09</span> 
+          </div> 
+         </div> </a> </li> 
+       <li class="acticle-item"> <a href="https://www.extfans.com/articles/1399/" target="_blank" title="Screencastify插件，网页屏幕录像机，支持在线编辑视频"> 
+         <div class="acticle-item-pic" style="background-image: url('https://extension.extfans.com/extfans-v2/article/230df49d0d931aba90e24a11763589.jpeg?imageView2/2/w/447/h/282/q/100')"></div> 
+         <div class="acticle-item-content"> 
+          <h3 class="acticle-item-title">Screencastify插件，网页屏幕录像机，支持在线编辑视频</h3> 
+          <div class="acticle-item-glance-over"> <span class="looks">11</span> <span class="time">2020-10-09</span> 
+          </div> 
+         </div> </a> </li> 
+       <li class="acticle-item"> <a href="https://www.extfans.com/articles/1398/" target="_blank" title="谷歌浏览器Chrome 86发布，这个重要功能终于能用了！"> 
+         <div class="acticle-item-pic" style="background-image: url('https://extension.extfans.com/extfans-v2/article/dba09d0085cc435a8bec33d19dada4.jpeg?imageView2/2/w/447/h/282/q/100')"></div> 
+         <div class="acticle-item-content"> 
+          <h3 class="acticle-item-title">谷歌浏览器Chrome 86发布，这个重要功能终于能用了！</h3> 
+          <div class="acticle-item-glance-over"> <span class="looks">46</span> <span class="time">2020-10-09</span> 
+          </div> 
+         </div> </a> </li> 
+       <li class="acticle-item"> <a href="https://www.extfans.com/articles/1361/" target="_blank" title="小番茄插件：时间管理必备，提高生产力"> 
+         <div class="acticle-item-pic" style="background-image: url('https://extension.extfans.com/extfans-v2/article/e28c4f2cc5b501f063ce2ff6aed05c.jpeg?imageView2/2/w/447/h/282/q/100')"></div> 
+         <div class="acticle-item-content"> 
+          <h3 class="acticle-item-title">小番茄插件：时间管理必备，提高生产力</h3> 
+          <div class="acticle-item-glance-over"> <span class="looks">127</span> <span class="time">2020-10-08</span> 
+          </div> 
+         </div> </a> </li> 
+       <li class="acticle-item"> <a href="https://www.extfans.com/articles/1348/" target="_blank" title="Hop Don't Stop插件，免费在线跑酷游戏"> 
+         <div class="acticle-item-pic" style="background-image: url('https://extension.extfans.com/extfans-v2/article/36d58970f40a58a1c1dd5d71d9572b.jpeg?imageView2/2/w/447/h/282/q/100')"></div> 
+         <div class="acticle-item-content"> 
+          <h3 class="acticle-item-title">Hop Don't Stop插件，免费在线跑酷游戏</h3> 
+          <div class="acticle-item-glance-over"> <span class="looks">61</span> <span class="time">2020-10-08</span> 
+          </div> 
+         </div> </a> </li> 
+       <li class="acticle-item"> <a href="https://www.extfans.com/articles/1393/" target="_blank" title="Day-Count Timer插件，待办事项日期倒计时"> 
+         <div class="acticle-item-pic" style="background-image: url('https://extension.extfans.com/extfans-v2/article/3ce02296cefdc9b558ad23f85e8e7c.png?imageView2/2/w/447/h/282/q/100')"></div> 
+         <div class="acticle-item-content"> 
+          <h3 class="acticle-item-title">Day-Count Timer插件，待办事项日期倒计时</h3> 
+          <div class="acticle-item-glance-over"> <span class="looks">102</span> <span class="time">2020-10-07</span> 
+          </div> 
+         </div> </a> </li> 
+       <li class="acticle-item"> <a href="https://www.extfans.com/articles/1358/" target="_blank" title="选课助手插件，浙江大学教务系统选课助手"> 
+         <div class="acticle-item-pic" style="background-image: url('https://extension.extfans.com/extfans-v2/article/94d3ab9adbe73cccfcc22a36cc2706.jpeg?imageView2/2/w/447/h/282/q/100')"></div> 
+         <div class="acticle-item-content"> 
+          <h3 class="acticle-item-title">选课助手插件，浙江大学教务系统选课助手</h3> 
+          <div class="acticle-item-glance-over"> <span class="looks">154</span> <span class="time">2020-10-07</span> 
+          </div> 
+         </div> </a> </li> 
+       <li class="acticle-item"> <a href="https://www.extfans.com/articles/1357/" target="_blank" title="Video Screen Recorder插件，免费录制网页屏幕"> 
+         <div class="acticle-item-pic" style="background-image: url('https://extension.extfans.com/extfans-v2/article/86f77a10a801fbbda3826345d2a8b8.png?imageView2/2/w/447/h/282/q/100')"></div> 
+         <div class="acticle-item-content"> 
+          <h3 class="acticle-item-title">Video Screen Recorder插件，免费录制网页屏幕</h3> 
+          <div class="acticle-item-glance-over"> <span class="looks">65</span> <span class="time">2020-10-07</span> 
+          </div> 
+         </div> </a> </li> 
+       <li class="acticle-item"> <a href="https://www.extfans.com/articles/1346/" target="_blank" title="pakku插件下载，屏蔽过滤哔哩哔哩刷屏弹幕"> 
+         <div class="acticle-item-pic" style="background-image: url('https://extension.extfans.com/extfans-v2/article/e7ee2a9f42ab82cef7741ce39d2a8a.jpeg?imageView2/2/w/447/h/282/q/100')"></div> 
+         <div class="acticle-item-content"> 
+          <h3 class="acticle-item-title">pakku插件下载，屏蔽过滤哔哩哔哩刷屏弹幕</h3> 
+          <div class="acticle-item-glance-over"> <span class="looks">109</span> <span class="time">2020-10-06</span> 
+          </div> 
+         </div> </a> </li> 
+       <li class="acticle-item"> <a href="https://www.extfans.com/articles/1337/" target="_blank" title="Corfuland.gr NoAds插件，免费去除Corfuland网站广告"> 
+         <div class="acticle-item-pic" style="background-image: url('https://extension.extfans.com/extfans-v2/article/e2cb96ca97716801e46975168f5238.png?imageView2/2/w/447/h/282/q/100')"></div> 
+         <div class="acticle-item-content"> 
+          <h3 class="acticle-item-title">Corfuland.gr NoAds插件，免费去除Corfuland网站广告</h3> 
+          <div class="acticle-item-glance-over"> <span class="looks">89</span> <span class="time">2020-10-06</span> 
+          </div> 
+         </div> </a> </li> 
+       <li class="acticle-item"> <a href="https://www.extfans.com/articles/1354/" target="_blank" title="Shortcuts for Google插件，谷歌服务快捷访问菜单"> 
+         <div class="acticle-item-pic" style="background-image: url('https://extension.extfans.com/extfans-v2/article/83e6816a90194c03fea6fee2e4b128.jpeg?imageView2/2/w/447/h/282/q/100')"></div> 
+         <div class="acticle-item-content"> 
+          <h3 class="acticle-item-title">Shortcuts for Google插件，谷歌服务快捷访问菜单</h3> 
+          <div class="acticle-item-glance-over"> <span class="looks">232</span> <span class="time">2020-10-05</span> 
+          </div> 
+         </div> </a> </li> 
+      </ul> <a href="https://www.extfans.com/articles/" class="more" target="_blank" title="查看更多">查看更多</a> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="side-right fr"> <!-- HOT_DOWNLOADS_WEEK ：START --> 
+    <div class="list-right"> 
+     <h2 class="right-list-title">本周下载榜单</h2> 
+     <div class="ranking-body-box"> 
+      <ul class="ranking-body-list"> 
+       <li class="ranking-body-item clearfix"> <a href="https://www.extfans.com/productivity/mciiogijehkdemklbdcbfkefimifhecn/" data-chome-id="mciiogijehkdemklbdcbfkefimifhecn" target="_blank" title="Chrono下载管理器"> 
+         <div class="ranking-body-item-box clearfix"> 
+          <div class="ranking-body-item-img" style="background-image:url('https://extension.extfans.com/extension/mciiogijehkdemklbdcbfkefimifhecn/icon/icon.png?imageView2/2/w/54/h/54/q/100')"> 
+          </div> 
+          <div class="ranking-body-item-text"> 
+           <h3 class="ranking-body-name">Chrono下载管理器</h3> 
+           <div class="classify-details-grade" data-extension-star="4.37936">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> </a> </li> 
+       <li class="ranking-body-item clearfix"> <a href="https://www.extfans.com/productivity/dhdgffkkebhmkfjojejmpbldmpobfkfo/" data-chome-id="dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank" title="Tampermonkey：用户脚本管理器（油猴）"> 
+         <div class="ranking-body-item-box clearfix"> 
+          <div class="ranking-body-item-img" style="background-image:url('https://extension.extfans.com/extension/dhdgffkkebhmkfjojejmpbldmpobfkfo/icon/icon.png?t=0?imageView2/2/w/54/h/54/q/100')"> 
+          </div> 
+          <div class="ranking-body-item-text"> 
+           <h3 class="ranking-body-name">Tampermonkey：用户脚本管理器（油猴）</h3> 
+           <div class="classify-details-grade" data-extension-star="4.71432">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> </a> </li> 
+       <li class="ranking-body-item clearfix"> <a href="https://www.extfans.com/productivity/cfhdojbkjhnklbpkdaibdccddilifddb/" data-chome-id="cfhdojbkjhnklbpkdaibdccddilifddb" target="_blank" title="Adblock Plus - 免费广告拦截插件"> 
+         <div class="ranking-body-item-box clearfix"> 
+          <div class="ranking-body-item-img" style="background-image:url('https://extension.extfans.com/extension/cfhdojbkjhnklbpkdaibdccddilifddb/icon/icon.png?imageView2/2/w/54/h/54/q/100')"> 
+          </div> 
+          <div class="ranking-body-item-text"> 
+           <h3 class="ranking-body-name">Adblock Plus - 免费广告拦截插件</h3> 
+           <div class="classify-details-grade" data-extension-star="4.43949">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> </a> </li> 
+       <li class="ranking-body-item clearfix"> <a href="https://www.extfans.com/productivity/aapbdbdomjkkjkaonfhkkikfgjllcleb/" data-chome-id="aapbdbdomjkkjkaonfhkkikfgjllcleb" target="_blank" title="Google 翻译（谷歌网页翻译）"> 
+         <div class="ranking-body-item-box clearfix"> 
+          <div class="ranking-body-item-img" style="background-image:url('https://extension.extfans.com/extension/aapbdbdomjkkjkaonfhkkikfgjllcleb/icon/icon.png?imageView2/2/w/54/h/54/q/100')"> 
+          </div> 
+          <div class="ranking-body-item-text"> 
+           <h3 class="ranking-body-name">Google 翻译（谷歌网页翻译）</h3> 
+           <div class="classify-details-grade" data-extension-star="4.36127">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> </a> </li> 
+       <li class="ranking-body-item clearfix"> <a href="https://www.extfans.com/productivity/ngpampappnmepgilojfohadhhmbhlaek/" data-chome-id="ngpampappnmepgilojfohadhhmbhlaek" target="_blank" title="IDM Integration Module：网络下载助手"> 
+         <div class="ranking-body-item-box clearfix"> 
+          <div class="ranking-body-item-img" style="background-image:url('https://extension.extfans.com/extension/ngpampappnmepgilojfohadhhmbhlaek/icon/icon.png?t=1575513963204?imageView2/2/w/54/h/54/q/100')"> 
+          </div> 
+          <div class="ranking-body-item-text"> 
+           <h3 class="ranking-body-name">IDM Integration Module：网络下载助手</h3> 
+           <div class="classify-details-grade" data-extension-star="4.36278">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> </a> </li> 
+       <li class="ranking-body-item clearfix"> <a href="https://www.extfans.com/fun/necdbpkfpodgjalnmdibbaldhkephcfh/" data-chome-id="necdbpkfpodgjalnmdibbaldhkephcfh" target="_blank" title="我要看vip视频"> 
+         <div class="ranking-body-item-box clearfix"> 
+          <div class="ranking-body-item-img" style="background-image:url('https://extension.extfans.com/extension/necdbpkfpodgjalnmdibbaldhkephcfh/icon/icon.png?t=1586455684972?imageView2/2/w/54/h/54/q/100')"> 
+          </div> 
+          <div class="ranking-body-item-text"> 
+           <h3 class="ranking-body-name">我要看vip视频</h3> 
+           <div class="classify-details-grade" data-extension-star="1">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+           </div> 
+          </div> 
+         </div> </a> </li> 
+      </ul> 
+     </div> 
+    </div> <!-- HOT_DOWNLOADS_WEEK ：END --> <!-- RECOMMEND_EXTENSIONS ：START --> 
+    <div class="list-right"> 
+     <h2 class="right-list-title">Chrome插件推荐</h2> 
+     <div class="ranking-body-box"> 
+      <ul class="ranking-body-list"> 
+       <li class="ranking-body-item clearfix"> <a href="https://www.extfans.com/productivity/jmpepeebcbihafjjadogphmbgiffiajh/" data-chome-id="jmpepeebcbihafjjadogphmbgiffiajh" target="_blank" title="彩云小译 - 网页翻译插件"> 
+         <div class="ranking-body-item-box clearfix"> 
+          <div class="ranking-body-item-img" style="background-image:url('https://extension.extfans.com/extension/jmpepeebcbihafjjadogphmbgiffiajh/icon/icon.png?imageView2/2/w/54/h/54/q/100')"> 
+          </div> 
+          <div class="ranking-body-item-text"> 
+           <h3 class="ranking-body-name">彩云小译 - 网页翻译插件</h3> 
+           <div class="classify-details-grade" data-extension-star="4.47573">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> </a> </li> 
+       <li class="ranking-body-item clearfix"> <a href="https://www.extfans.com/productivity/cjpalhdlnbpafiamejdnhcphjbkeiagm/" data-chome-id="cjpalhdlnbpafiamejdnhcphjbkeiagm" target="_blank" title="uBlock Origin - 广告拦截器"> 
+         <div class="ranking-body-item-box clearfix"> 
+          <div class="ranking-body-item-img" style="background-image:url('https://extension.extfans.com/extension/cjpalhdlnbpafiamejdnhcphjbkeiagm/icon/icon.png?imageView2/2/w/54/h/54/q/100')"> 
+          </div> 
+          <div class="ranking-body-item-text"> 
+           <h3 class="ranking-body-name">uBlock Origin - 广告拦截器</h3> 
+           <div class="classify-details-grade" data-extension-star="4.70323">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> </a> </li> 
+       <li class="ranking-body-item clearfix"> <a href="https://www.extfans.com/productivity/eefoinodjigoedmfjkbikmdhecggljgc/" data-chome-id="eefoinodjigoedmfjkbikmdhecggljgc" target="_blank" title="极速二维码"> 
+         <div class="ranking-body-item-box clearfix"> 
+          <div class="ranking-body-item-img" style="background-image:url('https://extension.extfans.com/extension/eefoinodjigoedmfjkbikmdhecggljgc/icon/icon.png?imageView2/2/w/54/h/54/q/100')"> 
+          </div> 
+          <div class="ranking-body-item-text"> 
+           <h3 class="ranking-body-name">极速二维码</h3> 
+           <div class="classify-details-grade" data-extension-star="4.84211">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+           </div> 
+          </div> 
+         </div> </a> </li> 
+       <li class="ranking-body-item clearfix"> <a href="https://www.extfans.com/productivity/oeeeoehjmbecilllolfoikdabhapgoac/" data-chome-id="oeeeoehjmbecilllolfoikdabhapgoac" target="_blank" title="视频播放速度调节器"> 
+         <div class="ranking-body-item-box clearfix"> 
+          <div class="ranking-body-item-img" style="background-image:url('https://extension.extfans.com/extension/oeeeoehjmbecilllolfoikdabhapgoac/icon/icon.png?t=1577256812707?imageView2/2/w/54/h/54/q/100')"> 
+          </div> 
+          <div class="ranking-body-item-text"> 
+           <h3 class="ranking-body-name">视频播放速度调节器</h3> 
+           <div class="classify-details-grade" data-extension-star="4.72727">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+           </div> 
+          </div> 
+         </div> </a> </li> 
+       <li class="ranking-body-item clearfix"> <a href="https://www.extfans.com/fun/ohfnohibneicledlcolmfeochkmbecjd/" data-chome-id="ohfnohibneicledlcolmfeochkmbecjd" target="_blank" title="B站视频下载"> 
+         <div class="ranking-body-item-box clearfix"> 
+          <div class="ranking-body-item-img" style="background-image:url('https://extension.extfans.com/extension/ohfnohibneicledlcolmfeochkmbecjd/icon/icon.png?t=1594205015224?imageView2/2/w/54/h/54/q/100')"> 
+          </div> 
+          <div class="ranking-body-item-text"> 
+           <h3 class="ranking-body-name">B站视频下载</h3> 
+           <div class="classify-details-grade" data-extension-star="2">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+           </div> 
+          </div> 
+         </div> </a> </li> 
+       <li class="ranking-body-item clearfix"> <a href="https://www.extfans.com/productivity/imjoocoajfjgnabmlbgpcnpieibibhmd/" data-chome-id="imjoocoajfjgnabmlbgpcnpieibibhmd" target="_blank" title="百度文库免费下载"> 
+         <div class="ranking-body-item-box clearfix"> 
+          <div class="ranking-body-item-img" style="background-image:url('https://extension.extfans.com/extension/imjoocoajfjgnabmlbgpcnpieibibhmd/icon/icon.png?t=1595380731396?imageView2/2/w/54/h/54/q/100')"> 
+          </div> 
+          <div class="ranking-body-item-text"> 
+           <h3 class="ranking-body-name">百度文库免费下载</h3> 
+           <div class="classify-details-grade" data-extension-star="3.53846">
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star"></p>
+            <p class="grade-star-semi"></p>
+            <p class="grade-star-empty"></p>
+           </div> 
+          </div> 
+         </div> </a> </li> 
+      </ul> 
+     </div> 
+    </div> <!-- RECOMMEND_EXTENSIONS ：END --> <!-- LATEST_EXTENSIONS ：START --> 
+    <div class="list-right"> 
+     <h2 class="right-list-title">最新Chrome插件</h2> 
+     <div class="ranking-body-box"> 
+      <ul class="ranking-body-list"> 
+       <li class="ranking-body-item clearfix"> <a href="https://www.extfans.com/shopping/ceedlhpnlnfffnholhapkcjicincbabp/" data-chome-id="ceedlhpnlnfffnholhapkcjicincbabp" target="_blank" title="Deux garcons Hoarder is Song U Jin in Wish 插件"> 
+         <div class="ranking-body-item-box clearfix"> 
+          <div class="ranking-body-item-img" style="background-image:url('https://extension.extfans.com/extension/ceedlhpnlnfffnholhapkcjicincbabp/icon/icon.png?t=1602208144741?imageView2/2/w/54/h/54/q/100')"> 
+          </div> 
+          <div class="ranking-body-item-text"> 
+           <h3 class="ranking-body-name">Deux garcons Hoarder is Song U Jin in Wish</h3> 
+           <div class="classify-details-grade" data-extension-star="0">
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+           </div> 
+          </div> 
+         </div> </a> </li> 
+       <li class="ranking-body-item clearfix"> <a href="https://www.extfans.com/productivity/mcfncmgpoefggbpeloigfonenlmamgjf/" data-chome-id="mcfncmgpoefggbpeloigfonenlmamgjf" target="_blank" title="2oTabs - Save and Restore Tabs 插件"> 
+         <div class="ranking-body-item-box clearfix"> 
+          <div class="ranking-body-item-img" style="background-image:url('https://extension.extfans.com/extension/mcfncmgpoefggbpeloigfonenlmamgjf/icon/icon.png?t=1602208374789?imageView2/2/w/54/h/54/q/100')"> 
+          </div> 
+          <div class="ranking-body-item-text"> 
+           <h3 class="ranking-body-name">2oTabs - Save and Restore Tabs</h3> 
+           <div class="classify-details-grade" data-extension-star="0">
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+           </div> 
+          </div> 
+         </div> </a> </li> 
+       <li class="ranking-body-item clearfix"> <a href="https://www.extfans.com/productivity/ioefdnfleobejgjajmgkfahnafphfooa/" data-chome-id="ioefdnfleobejgjajmgkfahnafphfooa" target="_blank" title="Done. Productivity Superpower &amp; Task Manager"> 
+         <div class="ranking-body-item-box clearfix"> 
+          <div class="ranking-body-item-img" style="background-image:url('https://extension.extfans.com/extension/ioefdnfleobejgjajmgkfahnafphfooa/icon/icon.png?t=1602033550362?imageView2/2/w/54/h/54/q/100')"> 
+          </div> 
+          <div class="ranking-body-item-text"> 
+           <h3 class="ranking-body-name">Done. Productivity Superpower &amp; Task Manager</h3> 
+           <div class="classify-details-grade" data-extension-star="0">
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+           </div> 
+          </div> 
+         </div> </a> </li> 
+       <li class="ranking-body-item clearfix"> <a href="https://www.extfans.com/productivity/hdbnkdbhglahihjdbodmfefogcjbpgbo/" data-chome-id="hdbnkdbhglahihjdbodmfefogcjbpgbo" target="_blank" title="OptMeowt 插件"> 
+         <div class="ranking-body-item-box clearfix"> 
+          <div class="ranking-body-item-img" style="background-image:url('https://extension.extfans.com/extension/hdbnkdbhglahihjdbodmfefogcjbpgbo/icon/icon.png?t=1602034181281?imageView2/2/w/54/h/54/q/100')"> 
+          </div> 
+          <div class="ranking-body-item-text"> 
+           <h3 class="ranking-body-name">OptMeowt</h3> 
+           <div class="classify-details-grade" data-extension-star="0">
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+           </div> 
+          </div> 
+         </div> </a> </li> 
+       <li class="ranking-body-item clearfix"> <a href="https://www.extfans.com/fun/hjjadcpfkffdpejcpohjmlcfileflggh/" data-chome-id="hjjadcpfkffdpejcpohjmlcfileflggh" target="_blank" title="Bus Simulator: City Driving Game"> 
+         <div class="ranking-body-item-box clearfix"> 
+          <div class="ranking-body-item-img" style="background-image:url('https://extension.extfans.com/extension/hjjadcpfkffdpejcpohjmlcfileflggh/icon/icon.png?t=1602034796733?imageView2/2/w/54/h/54/q/100')"> 
+          </div> 
+          <div class="ranking-body-item-text"> 
+           <h3 class="ranking-body-name">Bus Simulator: City Driving Game</h3> 
+           <div class="classify-details-grade" data-extension-star="0">
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+           </div> 
+          </div> 
+         </div> </a> </li> 
+       <li class="ranking-body-item clearfix"> <a href="https://www.extfans.com/photos/lkhlnbpdmlhdcmpdbbhmfnofobibihfp/" data-chome-id="lkhlnbpdmlhdcmpdbbhmfnofobibihfp" target="_blank" title="MTranslate 插件"> 
+         <div class="ranking-body-item-box clearfix"> 
+          <div class="ranking-body-item-img" style="background-image:url('https://extension.extfans.com/extension/lkhlnbpdmlhdcmpdbbhmfnofobibihfp/icon/icon.png?t=1602036554406?imageView2/2/w/54/h/54/q/100')"> 
+          </div> 
+          <div class="ranking-body-item-text"> 
+           <h3 class="ranking-body-name">MTranslate</h3> 
+           <div class="classify-details-grade" data-extension-star="0">
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+            <p class="grade-star-empty"></p>
+           </div> 
+          </div> 
+         </div> </a> </li> 
+      </ul> 
+     </div> 
+    </div> <!-- LATEST_EXTENSIONS ：END --> <!-- HOT_SEARCH_KEYWORDS ：START --> 
+    <div class="list-right"> 
+     <h2 class="right-list-title">热门搜索</h2> 
+     <ul class="hot-search-list clearfix"> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/search/extensions/%25E8%25B0%25B7%25E6%25AD%258C%25E6%258F%2592%25E4%25BB%25B6%25E4%25B8%258B%25E8%25BD%25BD%25E6%2595%2599%25E7%25A8%258B/" target="_blank" title="谷歌插件下载教程">谷歌插件下载教程</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/search/extensions/the%2520visibility%2520of%2520viewed%2520youtube/" target="_blank" title="the visibility of viewed youtube">the visibility of viewed youtube</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/search/extensions/%25E5%259C%25A8%25E7%25BA%25BF%25E4%25BA%25A4%25E5%258F%258B/" target="_blank" title="在线交友">在线交友</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/search/extensions/stickers/" target="_blank" title="stickers">stickers</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/search/extensions/%25E6%259C%2597%25E8%25AF%25BBl/" target="_blank" title="朗读l">朗读l</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/search/extensions/chrome%25E5%258D%25A0%25E7%2594%25A8/" target="_blank" title="chrome占用">chrome占用</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/search/extensions/%25E7%25AC%25AC%25E4%25B8%2580%25E8%258C%2583%25E6%2596%2587/" target="_blank" title="第一范文">第一范文</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/search/extensions/%25E7%25BD%2591%25E6%2598%2593%25E4%25BA%2591%25E9%259F%25B3%25E4%25B9%2590%25E8%25A7%2586%25E9%25A2%2591/" target="_blank" title="网易云音乐视频">网易云音乐视频</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/search/extensions/neate%2520download%2520manager/" target="_blank" title="neate download manager">neate download manager</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/search/extensions/postman%2520mac/" target="_blank" title="postman mac">postman mac</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/search/extensions/vimgifs/" target="_blank" title="vimgifs">vimgifs</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/search/extensions/%25E6%2581%25B6%25E6%2584%258F%25E6%2589%25A9%25E5%25B1%2595/" target="_blank" title="恶意扩展">恶意扩展</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/search/extensions/%25E5%2585%25B3%25E9%2597%25AD%25E6%259C%2580%25E5%2590%258E%25E4%25B8%2580%25E4%25B8%25AA%25E6%25A0%2587%25E7%25AD%25BE%25E4%25B8%258D%25E9%2580%2580%25E5%2587%25BA/" target="_blank" title="关闭最后一个标签不退出">关闭最后一个标签不退出</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/search/extensions/comic%252B%252B/" target="_blank" title="comic++">comic++</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/search/extensions/%25E6%258A%25B5%25E5%2588%25B0%25E7%2583%2582%25E6%258F%2592%25E4%25BB%25B6/" target="_blank" title="抵到烂插件">抵到烂插件</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/search/extensions/%25E8%25BF%2599%25E4%25BA%259B%25E5%258F%25AF%25E4%25BB%25A5%25E5%25AE%2589%25E8%25A3%2585%25E6%258F%2592%25E4%25BB%25B6%25E7%259A%2584%25E6%2589%258B%25E6%259C%25BA%25E6%25B5%258F%25E8%25A7%2588%25E5%2599%25A8/" target="_blank" title="这些可以安装插件的手机浏览器">这些可以安装插件的手机浏览器</a></li> 
+     </ul> 
+     <div class="lookMore">
+      <a href="https://www.extfans.com/search/" target="_blank" title="热门Chrome插件">查看全部搜索词</a>
+     </div> 
+    </div> <!-- HOT_SEARCH_KEYWORDS ：END --> <!-- HOT_TAGS ：START --> 
+    <div class="list-right"> 
+     <h2 class="right-list-title">热门标签</h2> 
+     <ul class="hot-search-list clearfix"> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/tag/extensions/1/" target="_blank" title="图片">图片</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/tag/extensions/5/" target="_blank" title="安全">安全</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/tag/extensions/9/" target="_blank" title="谷歌浏览器">谷歌浏览器</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/tag/extensions/15/" target="_blank" title="开发者插件">开发者插件</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/tag/extensions/22/" target="_blank" title="Chrome">Chrome</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/tag/extensions/27/" target="_blank" title="视频">视频</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/tag/extensions/38/" target="_blank" title="谷歌官方">谷歌官方</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/tag/extensions/66/" target="_blank" title="网站推荐">网站推荐</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/tag/extensions/70/" target="_blank" title="冷门插件">冷门插件</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/tag/extensions/71/" target="_blank" title="插件推荐">插件推荐</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/tag/extensions/75/" target="_blank" title="社交">社交</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/tag/extensions/76/" target="_blank" title="小程序">小程序</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/tag/extensions/78/" target="_blank" title="新媒体工具">新媒体工具</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/tag/extensions/90/" target="_blank" title="网站技术">网站技术</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/tag/extensions/97/" target="_blank" title="辅助插件">辅助插件</a></li> 
+      <li class="hot-search-item"><a href="https://www.extfans.com/tag/extensions/109/" target="_blank" title="学习">学习</a></li> 
+     </ul> 
+     <div class="lookMore">
+      <a href="https://www.extfans.com/tag/" target="_blank" title="最新Chrome插件">查看全部标签</a>
+     </div> 
+    </div> <!-- HOT_TAGS ：END --> <!-- FEATURED_ARTICLES ：START --> 
+    <div class="list-right"> 
+     <h2 class="right-list-title">精选文章</h2> 
+     <ul class="article-jx-list"> 
+      <li class="article-jx-item"> <a href="https://www.extfans.com/articles/1280/" target="_blank" title="全新教程：如何使用IDM不限速下载百度云盘资源"> <p>全新教程：如何使用IDM不限速下载百度云盘资源</p> </a> </li> 
+      <li class="article-jx-item"> <a href="https://www.extfans.com/articles/1051/" target="_blank" title="近期谷歌浏览器安装插件出现“对扩展程序降级”提示等问题的解决办法"> <p>近期谷歌浏览器安装插件出现“对扩展程序降级”提示等问题的解决办法</p> </a> </li> 
+      <li class="article-jx-item"> <a href="https://www.extfans.com/articles/1049/" target="_blank" title="edge 81版本浏览器插件安装教程"> <p>edge 81版本浏览器插件安装教程</p> </a> </li> 
+      <li class="article-jx-item"> <a href="https://www.extfans.com/articles/1035/" target="_blank" title="国内如何下载谷歌浏览器？Chrome浏览器下载及更新方式详解"> <p>国内如何下载谷歌浏览器？Chrome浏览器下载及更新方式详解</p> </a> </li> 
+      <li class="article-jx-item"> <a href="https://www.extfans.com/articles/489/" target="_blank" title="Tampermonkey油猴脚本管理插件-浏览器黑科技的安装使用全攻略"> <p>Tampermonkey油猴脚本管理插件-浏览器黑科技的安装使用全攻略</p> </a> </li> 
+     </ul> 
+    </div> <!-- FEATURED_ARTICLES ：END --> 
+    <div class="list-right"> 
+     <h2 class="right-list-title">扩展迷QQ交流群</h2> 
+     <div class="clearfix sidebar_contact"> 
+      <div class="icon">
+       <img src="static/site/img/qq.png?v=3.1.4" alt="qq">
+      </div> 
+      <div class="text">
+       398095333
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> <!-- 底部 --> 
+  <div class="foot"> 
+   <div class="footer w"> 
+    <div class="clearfix"> 
+     <div class="ext-left fl"> 
+      <h2 class="footer-title">热门插件</h2> 
+      <ul class="hot-exts clearfix"> 
+       <ol class="hot-exts-item">
+        <a href="https://www.extfans.com/productivity/aapbdbdomjkkjkaonfhkkikfgjllcleb/" target="_blank" title="Google 翻译（谷歌网页翻译）">Google 翻译（谷歌网页翻译）</a>
+       </ol> 
+       <ol class="hot-exts-item">
+        <a href="https://www.extfans.com/web-development/fhbjgbiflinjbdggehcddcbncdddomop/" target="_blank" title="Postman">Postman</a>
+       </ol> 
+       <ol class="hot-exts-item">
+        <a href="https://www.extfans.com/productivity/jmpepeebcbihafjjadogphmbgiffiajh/" target="_blank" title="彩云小译 - 网页翻译插件">彩云小译 - 网页翻译插件</a>
+       </ol> 
+       <ol class="hot-exts-item">
+        <a href="https://www.extfans.com/search-tools/gjldcdngmdknpinoemndlidpcabkggco/" target="_blank" title="扩展管理器（Extension Manager）">扩展管理器（Extension Manager）</a>
+       </ol> 
+       <ol class="hot-exts-item">
+        <a href="https://www.extfans.com/productivity/kbfnbcaeplbcioakkpcpgfkobkghlhen/" target="_blank" title="Grammarly for Chrome">Grammarly for Chrome</a>
+       </ol> 
+       <ol class="hot-exts-item">
+        <a href="https://www.extfans.com/productivity/cdonnmffkdaoajfknoeeecmchibpmkmg/" target="_blank" title="沙拉查词-聚合词典划词翻译">沙拉查词-聚合词典划词翻译</a>
+       </ol> 
+       <ol class="hot-exts-item">
+        <a href="https://www.extfans.com/productivity/mcbpblocgmgfnpjjppndjkmgjaogfceg/" target="_blank" title="捕捉网页截图 - FireShot">捕捉网页截图 - FireShot</a>
+       </ol> 
+       <ol class="hot-exts-item">
+        <a href="https://www.extfans.com/chrome-app/phlfmkfpmphogkomddckmggcfpmfchpn/" target="_blank" title="右键搜">右键搜</a>
+       </ol> 
+       <ol class="hot-exts-item">
+        <a href="https://www.extfans.com/productivity/nmgpnfccjfjhdenioncabecepjcmdnjg/" target="_blank" title="FasterChrome">FasterChrome</a>
+       </ol> 
+      </ul> 
+     </div> 
+     <div class="about-us fl"> 
+      <h2 class="footer-title">关于</h2> 
+      <div class="about-link"> 
+       <div>
+        <a href="javascript:;" id="J-contact-link" title="联系我们">联系我们</a>
+       </div> 
+       <div>
+        <a href="https://www.extfans.com/policy/" target="_blank" title="隐私政策" rel="nofollow">隐私政策</a>
+       </div> 
+       <div>
+        <a href="https://www.extfans.com/terms/" target="_blank" title="用户协议" rel="nofollow">用户协议</a>
+       </div> 
+       <div>
+        <a href="https://www.extfans.com/disclaimer/" target="_blank" title="免责声明" rel="nofollow">免责声明</a>
+       </div> 
+       <div>
+        <a href="http://infinity.mikecrm.com/jhstrDU" target="_blank" title="问题反馈" rel="nofollow">问题反馈</a>
+       </div> 
+       <div>
+        <span>QQ群：398095333</span>
+       </div> 
+      </div> 
+     </div> 
+     <div class="about-wechat fl"> 
+      <h2 class="footer-title">关注扩展迷官方公众号</h2> 
+      <div class="qrcode"> 
+       <img src="static/site/src/img/qrcode_for_gh_29a1713d2a3b_258.jpg" alt="微信公众号二维码" align="qr_code"> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="friendly-link"> 
+     <h2 class="footer-title">友情链接</h2> 
+     <div class="about-link"> 
+      <div>
+       <a href="javascript:;" id="J-application-link" title="友情链接申请">友情链接申请</a>
+      </div> 
+     </div> 
+    </div> 
+    <div class="friend-modal hide" id="J-friend-modal"> 
+     <div class="modal-content"> <span class="e-close-modal close"><img src="static/site/src/img/close.png?v=3.1.4" alt="close 友情链接申请"></span> 
+      <h3 class="title">友情链接申请</h3> 
+      <p class="content">若您要申请友情链接，请发送相关网址和网址名称到<br>infinitynewtab@gmail.com</p> <button class="close-btn close">我知道了</button> 
+     </div> 
+    </div> 
+    <div class="friend-modal hide" id="J-contact-modal"> 
+     <div class="modal-content"> <span class="e-close-modal close"><img src="static/site/src/img/close.png?v=3.1.4" alt="close"></span> 
+      <h3 class="title">联系我们</h3> 
+      <p class="content" style="margin-top: 20px;line-height:0"> <img src="static/site/src/img/qrcode_for_gh_29a1713d2a3b_258.jpg" alt="微信公众号二维码" width="106px"> <span style="display: block;text-align: center;line-height: 12px;font-size:12px;color:rgba(51,51,51,1);">扩展迷Extfans</span> </p> 
+      <p style="margin-top: 20px;text-align: center;font-size:12px;font-weight:400;color:rgba(51,51,51,1);">邮箱：infinitynewtab@gmail.com</p> 
+     </div> 
+    </div> 
+    <div class="copy-right"> 
+     <div class="clearfix" style="height: 45px;overflow: hidden;"> <span class="fl">Copyright © 2014-2020 备案号： </span> <span class="fl"><a href="http://www.beian.miit.gov.cn" target="_blank" rel="nofollow" style="color: #939393">渝ICP备15002199号-4</a></span> 
+      <div style="display: inline-block;margin-top: 4px; margin-left: 15px;" class="fl"> <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50019002501815" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;" rel="nofollow"> <img src="static/site/img/ba.png?v=3.1.4" alt="渝公网安备" style="float:left;width: 15px;margin-top: 3px;"> <p style="float:left;height:20px;line-height:22px;margin: 0px 0px 0px 5px; color:#939393;">渝公网安备 50019002501815号 </p> </a> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="loading" style="display: none" id="loading_container"> 
+   <div class="container"> 
+    <div class="dot dot-1"></div> 
+    <div class="dot dot-2"></div> 
+    <div class="dot dot-3"></div> 
+   </div> 
+  </div> 
+  <div class="app_error_modal hide" id="J-error-tip-msg">
+   <img src="static/site/src/img/error1.png?v=3.1.4" width="40px" alt="错误提示"><span>保存失败</span>
+  </div> 
+  <div class="app_error_modal app_success_modal hide" id="J-success-tip-msg">
+   <img src="static/site/src/img/success1.png?v=3.1.4" width="40px" alt="成功提示"><span>保存成功</span>
+  </div> <!-- 下载弹窗 --> 
+  <div class="e-modal-wrap hide" id="J-modal"> 
+   <div class="e-modal"> <span class="e-close-modal" id="J-close"><img src="static/site/src/img/close.png?v=3.1.4" alt="close"></span> 
+    <div class="e-qr-code"> 
+     <img src="static/site/src/img/qrcode_for_gh_29a1713d2a3b_258.jpg" alt="qr-code"> 
+    </div> 
+    <p class="e-modal-tip">为打击盗链困扰，本站已启用公众号验证<br>微信扫码关注上方公众号，回复“<i>插件</i>”二字获得验证码，验证码5分钟内全站有效。</p> 
+    <div class="clearfix e-download-code"> 
+     <div class="e-yz-code-box fl"> 
+      <input type="text" placeholder="输入6位验证码" class="e-yz-code" id="J-yz-code"> <button id="J-download">开始下载</button> 
+     </div> 
+     <div class="result fl" id="J-result"> 
+      <div class="longding"> 
+       <div class="loadEffect"> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> 
+       </div> <span>正在验证</span> 
+      </div> <span class="success hide">验证成功</span> <span class="error hide"></span> 
+     </div> 
+    </div> 
+    <div class="e-download-ques"> <a class="e-downlown-link" href="http://infinity.mikecrm.com/jhstrDU" rel="nofollow" target="_blank" title="无法下载">无法下载</a> <a href="https://www.extfans.com/installation/" target="_blank" title="如何离线安装？">如何离线安装？</a> 
+    </div> 
+    <div class="e-unit-address">
+     下载遇到问题？请添加QQ群：398095333
+    </div> 
+   </div> 
+  </div> 
+  <div class="e-modal-wrap hide" id="J-modal-down"> 
+   <div class="e-modal" style="padding-bottom:70px"> <span class="e-close-modal" id="J-close-down_script"><img src="static/site/src/img/close.png?v=3.1.4" alt="close"></span> 
+    <div class="e-qr-code"> 
+     <img src="static/site/src/img/qrcode_for_gh_29a1713d2a3b_258.jpg" alt="qr-code"> 
+    </div> 
+    <p class="e-modal-tip">为打击盗链困扰，本站已启用公众号验证<br>微信扫码关注上方公众号，回复“<i>脚本</i>”二字获得验证码，验证码5分钟内全站有效。</p> 
+    <div class="clearfix e-download-code"> 
+     <div class="e-yz-code-box fl"> 
+      <input type="text" placeholder="输入6位验证码" class="e-yz-code" id="J-down-code"> <button id="J-download-script">获取脚本</button> 
+     </div> 
+     <div class="result fl" id="J-result"> 
+      <div class="longding"> 
+       <div class="loadEffect"> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> 
+       </div> <span>正在验证</span> 
+      </div> <span class="success hide">验证成功</span> <span class="error hide"></span> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="e-modal-wrap hide" id="J_down_link_modal"> 
+   <div class="e-modal link_box"> <span class="e-close-modal" id="J_down_link_close"><img src="static/site/src/img/close.png?v=3.1.4" alt="close"></span> 
+    <div class="down_link_box"> 
+     <p>下载地址</p> <a href="#" id="J_down_link_text" target="_blank"></a> 
+    </div> 
+    <div class="down_link_box"> 
+     <p>网盘：</p> <a href="#" id="J_down_link_wp_text" target="_blank"></a> <!-- <p>提取码：<i id="J_wp_code"></i></p> --> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="modal hide" id="J_login_modal"> 
+   <div class="app_content_login"> <span class="e-close-modal close"><img src="static/site/src/img/close.png?v=3.1.4" onclick="$('#J_login_modal').addClass('hide')" alt="close"></span> 
+    <p class="title">登录到扩展迷</p> 
+    <p class="tip">使用QQ或微信一键登录，查看海量优秀Chrome插件</p> 
+    <div class="login_btn_box"> <a href="javascript:;" id="J-qq—login" data-url="https://www.extfans.com/third-part/qq"><i></i>QQ登录</a> <a href="javascript:;" id="J-wechat—login" data-url="https://www.extfans.com/third-part/wechat"><i></i>微信登录</a> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="modal hide" id="J-quit"> 
+   <div class="app_user_content"> <span class="e-close-modal" id="J-close-quit"><img src="static/site/img/close.png?v=3.1.4" alt="close" width="18px"></span> 
+    <p class="out_text">是否退出登录？</p> 
+    <div class="out_box_btn"> <a href="https://www.extfans.com/account/logout" title="退出登录">是</a> <a href="javascript:;" title="取消退出登录" id="J-cancel-quit">否</a> 
+    </div> 
+   </div> 
+  </div>  
+  <script type="text/javascript" src="static/site/src/js/jquery.cookie.js?v=3.1.4"></script> 
+  <script src="static/site/src/js/settingDevicePixelRatio.js?v=3.1.4" defer></script> 
+  <script async src="gtag/js?id=UA-121060027-1"></script> 
+  <script src="static/site/src/js/common.js?v=3.1.4" defer></script> 
+  <script>
+        function comments(comment_id, page, click_trigger) {
+            //初始化变量
+            var comment_lists_obj = $("#app_comment_list_"+parseInt(comment_id)), post_url = comment_lists_obj.attr('data-list-url'), comment_content_box = comment_lists_obj.parents('.app_article_deatils_comment_content'), lookmore = $("#look_more_comment_"+parseInt(comment_id)), lookall = $("#lookcomment_"+parseInt(comment_id)), loading_more = $("#comment_loading");
+            //整理页码
+            page = (typeof (page) === 'undefined' || page.length <= 0 || parseInt(page) <= 0) ? 1 : parseInt(page)
+            //判断页码是否为第一页
+            if (parseInt(page) <= 1) {
+                //清空对象
+                comment_lists_obj.empty().html('');
+            }
+            //设置隐藏及参数
+            lookmore.removeClass('hide').addClass('hide');
+            //判断是否为检测全部评论
+            if (typeof (lookall) !== 'undefined' && click_trigger) {
+                //获取开启状态
+                var open = lookall.attr('data-open');
+                //判断信息
+                if (typeof (open) === 'undefined' || parseInt(open) === 0) {
+                    //设置开启状态
+                    lookall.attr('data-open', 1);
+                    //隐藏回复列表信息
+                    comment_lists_obj.removeClass('hide');
+                    //更改文案
+                    lookall.text('收起全部评论');
+                } else {
+                    //设置关闭状态
+                    lookall.attr('data-open', 0);
+                    //隐藏回复列表信息
+                    comment_lists_obj.addClass('hide');
+                    //更改文案
+                    lookall.text('查看全部评论');
+                    //返回处理
+                    return false;
+                }
+            }
+            lookmore.attr('data-page', (page+1))
+            //显示loading
+            loading_more.removeClass('hide');
+            //开始请求
+            if(navigator.onLine){
+                //发送请求
+                $.ajax({
+                    type: 'POST',
+                    url: post_url,
+                    data: {page:page},
+                    dataType: 'json',
+                    timeout: 3000,
+                    success: function(res) {
+                        //隐藏loading
+                        loading_more.addClass('hide');
+                        //判断状态
+                        if (res.state) {
+                            //判断数据长度
+                            if (parseInt(res.data['matched_count']) > 0 && parseInt(page) <= 1 && comment_content_box.hasClass('hide')) {
+                                //显示评论区域
+                                comment_content_box.removeClass('hide');
+                            }
+                            //渲染信息
+                            comment_lists_obj.append(res.data['html']);
+                            //判断登录
+                            $("body").find(".auth_to_login_trigger").click(function () {
+                                //执行登录
+                                auth_login();
+                            });
+                            if (parseInt(res.data['page']) < parseInt(res.data['total_pages'])) {
+                                //显示查看更多评论
+                                lookmore.removeClass('hide');
+                            }
+                            $(".textarea_comment").on('keyup',function(){
+                                var code = $(this).val();
+                                if(code.length > 200){
+                                    $(this).siblings('span').removeClass('hide')
+                                }else{
+                                    $(this).siblings('span').addClass('hide')
+                                }
+                            })
+                        } else {
+
+                        }
+                    }, error: function(xhr, type){
+                        //隐藏loading
+                        loading_more.addClass('hide');
+                    }
+                })
+            }
+        }
+        //评论提交
+        function comment_submit(comment_id) {
+            //获取回复信息
+            var textarea_obj = $("#comment_content_"+parseInt(comment_id)), comment_url = textarea_obj.attr('data-comment-url'), content = textarea_obj.val();
+            //判断内容
+            if (typeof (content) === 'undefined' || content.length <= 0) {
+                //设置选中
+                textarea_obj[0].focus();
+                //停止执行
+                return false;
+            }
+            // //显示loading
+            // loadingStart();
+            //开始请求
+            if(navigator.onLine){
+                //发送请求
+                $.ajax({
+                    type: 'POST',
+                    url: comment_url,
+                    data: {content:content},
+                    dataType: 'json',
+                    timeout: 3000,
+                    success: function(res) {
+                        // //隐藏loading
+                        // loadingStop();
+                        //判断状态
+                        if (res.state) {
+                            //重置信息
+                            textarea_obj.val('')
+                            //收起回复框
+                            $('#app_reply_box_'+comment_id).addClass('hide')
+                            //刷新列表
+                            comments(parseInt(textarea_obj.attr("data-top")), 1, false);
+                        } else {
+                            showTip(false, res.msg)
+                        }
+                    }, error: function(xhr, type){
+                        // //隐藏loading
+                        // loadingStop();
+                        showTip(false, '网络错误，请稍后再试')
+                    }
+                })
+            }
+        }
+        //评论点赞
+        function comment_praise(comment_id) {
+            //获取回复信息
+            var praise_obj = $("#comment_praise_"+parseInt(comment_id)), praise_url = praise_obj.attr('data-praise-url');
+            // //显示loading
+            // loadingStart();
+            //开始请求
+            if(navigator.onLine){
+                //发送请求
+                $.ajax({
+                    type: 'POST',
+                    url: praise_url,
+                    data: {},
+                    dataType: 'json',
+                    timeout: 3000,
+                    success: function(res) {
+                        // //隐藏loading
+                        // loadingStop();
+                        //判断状态
+                        if (res.state) {
+                            //判断状态
+                            if (parseInt(res.data['status']) === 1) {
+                                praise_obj.addClass('active');
+                            } else {
+                                praise_obj.removeClass('active');
+                            }
+                            //设置数量
+                            praise_obj.text(parseInt(res.data['count']));
+                        } else {
+                            showTip(false, res.msg)
+                        }
+                    }, error: function(xhr, type){
+                        // //隐藏loading
+                        // loadingStop();
+                        showTip(false, '网络错误，请稍后再试')
+                    }
+                })
+            }
+        }
+    </script> 
+  <script src="static/site/src/js/index/index.js?v=3.1.4" defer></script> 
+  <script>
+        //action search
+        function searching() {
+            //获取搜索内容
+            var keyword = $("#search-input-item").val(), search_uri = 'https://www.extfans.com/search/', regular = new RegExp("怎么|怎样|如何|什么|推荐|哪些"), object = 'extensions';
+            //判断长度
+            if (parseInt(keyword.length) > 0) {
+                //判断关键词信息
+                if (keyword.trim() === '.') {
+                    //设置关键词信息
+                    keyword = '&quot;';
+                } else if (keyword.trim() === '..') {
+                    //设置关键词信息
+                    keyword = '&quot;&quot;'
+                }
+                //整理搜索词
+                var keyword_decode = encodeURIComponent(encodeURIComponent(keyword.trim()));
+                //判断疑问句
+                if (regular.test(keyword)) {
+                    //设置跳转对象
+                    object = 'articles';
+                }
+                //更改搜索链接
+                search_uri = 'https://www.extfans.com/search/__OBJECT__/__KEYWORD__/';
+                //整理查询链接
+                search_uri = search_uri.replace('__KEYWORD__', keyword_decode);
+                search_uri = search_uri.replace('__OBJECT__', object);
+                //搜索统计
+                searchGa(keyword)
+            }
+            window.location.href = search_uri;
+            return false;
+        }
+        $(function () {
+            $("#J_login").click(function () {
+                $("#J_login_modal").removeClass('hide');
+            });
+            var actionRouteName = "index", __extension_category__ = "";
+            //判断是否为文章详情
+            if (actionRouteName === "articles.detail") {
+                //判断当前是否为油猴脚本
+                            }
+            //循环顶部菜单
+            $(".header .nav ul").find("a").each(function () {
+                //获取当前route_name
+                var routeNames = $(this).attr("data-route-name"), categoryAlias = $(this).attr("data-category");
+                //判断信息
+                if (typeof (routeNames) !== 'undefined' && routeNames.length > 0) {
+                    //整理路由信息
+                    routeNames = routeNames.split(',');
+                    //判断是否存在
+                    if (routeNames.indexOf(actionRouteName) > -1) {
+                        //设置父级li选中
+                        $(this).parents("li").addClass("active");
+                        //判断是否存在分类
+                        if (typeof (categoryAlias) !== 'undefined' && categoryAlias.length > 0 && __extension_category__.length > 0 && categoryAlias === __extension_category__) {
+                            //设置选中
+                            // $(this).addClass("active");
+                            $(this).parents(".subnav").prev("a").empty().html($(this).text()+'<i class="menu-icon"></i>');
+                            $(this).parents(".subnav").prev("a").attr("href", $(this).attr("href"));
+                            $(this).parents(".subnav").find("a[data-route-name='top']").css({"display": "block"});
+                            $(this).remove();
+                        }
+                    }
+                }
+            });
+        });
+    </script> 
+  <script>
+        // 回车检测
+        $(document).keydown(function (event) {
+                if(event.keyCode == 13) {
+                    if(!$('#J-modal').hasClass('hide')){
+                        $("#J-download").trigger("click");
+                    }
+                    if(!$('#J-modal-down').hasClass('hide')){
+                        $("#J-download-script").trigger("click");
+                    }
+                }
+        });
+        $('.J-download-modal').click(function () {
+            // 获取本地cookie
+            var code = $.cookie("wechat_download_codes"),
+                chrome_id = $(this).attr("data-chrome-id"),
+                sort_name = $(this).attr("data-sort-name"),
+                infinity_words = $(this).attr("data-infinity-words");
+            //判断词
+            if (typeof (infinity_words) == 'undefined' || infinity_words.length <= 0) {
+                infinity_words = 'Infinity-最佳新标签页增强插件';
+            }
+            //直接使用cookie
+            if (typeof (code) !== 'undefined' && code.length > 0) {
+                gaDl(chrome_id, infinity_words);
+                //判断当前位置
+                if ("index" == 'articles.detail') {
+                    //文章详情页
+                    downTj('下载', '文章内下载');
+                } else {
+                    //扩展详情页
+                    if (parseInt($(this).attr("data-redirect")) === 1) {
+                        downTj('下载', 'bottom下载点击');
+                    } else {
+                        downTj('下载', 'top下载点击');
+                    }
+                }
+                var downloadLink=document.createElement('a'), redirect_uri = "https://www.extfans.com/extension/download/__CODE__/__CHROME_ID__/?s=__SORT_NAME__";
+                redirect_uri = redirect_uri.replace('__CODE__', code);
+                redirect_uri = redirect_uri.replace('__CHROME_ID__', chrome_id);
+                redirect_uri = redirect_uri.replace('__SORT_NAME__', sort_name);
+                // downloadLink.setAttribute('href',redirect_uri);
+                // downloadLink.setAttribute('target','_blank');
+                // downloadLink.click();
+                window.location = redirect_uri;
+                if (parseInt($(this).attr("data-redirect")) === 1) {
+                    setTimeout(function(){
+                        var installation_uri = "https://www.extfans.com/installation/?chrome_id=__CHROME_ID__&s=__SORT_NAME__";
+                        installation_uri = installation_uri.replace('__CHROME_ID__', chrome_id);
+                        installation_uri = installation_uri.replace('__SORT_NAME__', sort_name);
+                        window.location.href= installation_uri;
+                    },300)
+                }
+                return ;
+            }else{
+                //判断当前位置
+                if ("index" == 'articles.detail') {
+                            //文章详情页
+                            downTj('下载按钮点击', '文章内下载点击');
+                } else {
+                //扩展详情页
+                    if (parseInt($(this).attr("data-redirect")) === 1) {
+                        downTj('下载按钮点击', 'bottom下载点击');
+                    } else {
+                        downTj('下载按钮点击', 'top下载点击');
+                    }
+                }
+            }
+             
+            $('#J-result .longding').removeClass('show').removeClass('hide').addClass('hide');
+            $('#J-result .success').removeClass('show').removeClass('hide').addClass('hide');
+            $('#J-result .error').removeClass('show').removeClass('hide').addClass('hide');
+            $("#J-result").attr("data-chrome-id", chrome_id);
+            $("#J-result").attr("data-sort-name", sort_name);
+            $("#J-result").attr("data-infinity-words", infinity_words);
+            $("#J-yz-code").val('');
+            //加载
+            $('#J-result').removeClass('visibit').removeClass('visibit');
+            //设置禁用
+            $('#J-download').prop('disabled', false);
+            //设置背景
+            $('#J-download').css({background: "rgba(255,90,90)"});
+            $('#J-modal').removeClass('hide').attr("data-redirect", $(this).attr("data-redirect"));
+            $('#J-yz-code').focus()
+        });
+        $('.J-insert-script-btn').click(function() {
+            var script_code = $(this).attr("data-script-code");
+            //  // 获取本地cookie
+            var code = $.cookie("wechat_download_codes");
+            if (typeof (code) !== 'undefined' && code.length > 0) {
+                GetDownLoadLinkTj('获取油猴地址','直接获取')
+                post_uri = "https://www.extfans.com/tampermonkey/download/__SCRIPT_CODE__/";
+                post_uri = post_uri.replace('__SCRIPT_CODE__', script_code);
+                $.ajax({
+                        type: 'POST',
+                        url: post_uri,
+                        data: {code:code},
+                        dataType: 'json',
+                        timeout: 3000,
+                        success: function(res){
+                            //成功
+                            if(res.state){
+                                //隐藏弹框
+                                $('#J_down_link_text').text(res.data['link']);
+                                $('#J_down_link_text').attr('href',res.data['link']);
+                                $('#J_down_link_wp_text').text(res.data['pan_link'] + res.data['pan_secret']);
+                                $('#J_down_link_wp_text').attr('href',res.data['pan_link']+res.data['pan_secret']);
+                                // $('#J_wp_code').text(res.data['pan_secret']);
+                                $('#J_down_link_modal').removeClass('hide')
+                            }else{
+                                $('#J-modal-down').removeClass('hide');
+                                // 验证码错误的时候
+                                $('#J-result .longding').addClass('hide').removeClass('show');
+                                $('#J-result .success').addClass('hide').removeClass('show');
+                                $('#J-result .error').text(res.msg).addClass('show').removeClass('hide');
+                                //加载
+                                $('#J-result').removeClass('visibit').removeClass('visibit');
+                                //设置禁用
+                                $('#J-download-script').prop('disabled', false);
+                                $('#J-download-script').css({background: "background: rgba(255,90,90,1)"});
+                                //设置背景
+                                $("#J-down-code").focus();
+                            }
+                        },
+                        error: function(xhr, type){
+                            $('#J-download-script').prop('disabled', false);
+                            $('#J-download-script').css({background: "background: rgba(255,90,90,1)"});
+                            $('#J-result .longding').addClass('hide').removeClass('show');
+                            $('#J-result .success').addClass('hide').removeClass('show');
+                            $('#J-result .error').text("网络错误，请刷新后再试").addClass('show').removeClass('hide');
+                            errors('错误',xhr)
+                        }
+                })
+                return false
+            }
+            $('#J-result .longding').removeClass('show').removeClass('hide').addClass('hide');
+            $('#J-result .success').removeClass('show').removeClass('hide').addClass('hide');
+            $('#J-result .error').removeClass('show').removeClass('hide').addClass('hide');
+            $("#J-result").attr("data-script-code", script_code);
+            $("#J-down-code").val('');
+            //加载
+            $('#J-result').removeClass('visibit').removeClass('visibit');
+            //设置禁用
+            $('#J-download-script').prop('disabled', false);
+            //设置背景
+            $('#J-download-script').css({background: "rgba(255,90,90)"});
+            $('#J-modal-down').removeClass('hide')
+            $('#J-down-code').focus()
+        });
+        $('#J-download-script').on('click',function(){
+            $('#J-result .longding').removeClass('show').removeClass('hide').addClass('hide');
+            $('#J-result .success').removeClass('show').removeClass('hide').addClass('hide');
+            $('#J-result .error').removeClass('show').removeClass('hide').addClass('hide');
+            //获取验证码
+            var code = ToCDB($("#J-down-code").val().trim());
+            var script_code = $('#J-result').attr("data-script-code");
+            //检测验证码
+            if (code.length !== 0 && code.length == 6) {
+                //加载
+                $('#J-result').removeClass('visibit');
+                //设置禁用
+                $('#J-download').attr('disabled', 'disabled');
+                //设置背景
+                $('#J-download').css({background: "rgb(255,90,90,0.8)"});
+                $("#J-result .longding").removeClass("hide").addClass("show");
+
+                post_uri = "https://www.extfans.com/tampermonkey/download/__SCRIPT_CODE__/";
+                post_uri = post_uri.replace('__SCRIPT_CODE__', script_code);
+                GetDownLoadLinkTj('获取油猴地址','获取地址')
+                //开始加载
+                if(navigator.onLine){
+                    //发送请求
+                    $.ajax({
+                        type: 'POST',
+                        url: post_uri,
+                        data: {code:code},
+                        dataType: 'json',
+                        timeout: 3000,
+                        success: function(res){
+                            //成功
+                            if(res.state){
+                                //隐藏弹框
+                                $.cookie("wechat_download_codes", code, {path: '/', expires: new Date(res.data['expire_time']*1000)});
+                                $('#J-modal-down').addClass('hide');
+                                $('#J_down_link_text').text(res.data['link']);
+                                $('#J_down_link_text').attr('href',res.data['link']);
+                                $('#J_down_link_wp_text').text(res.data['pan_link'] + res.data['pan_secret']);
+                                $('#J_down_link_wp_text').attr('href',res.data['pan_link']+res.data['pan_secret']);
+                                // $('#J_wp_code').text(res.data['pan_secret']);
+                                $('#J_down_link_modal').removeClass('hide')
+                            }else{
+                                // 验证码错误的时候
+                                $('#J-result .longding').addClass('hide').removeClass('show');
+                                $('#J-result .success').addClass('hide').removeClass('show');
+                                $('#J-result .error').text(res.msg).addClass('show').removeClass('hide');
+                                //加载
+                                $('#J-result').removeClass('visibit').removeClass('visibit');
+                                //设置禁用
+                                $('#J-download-script').prop('disabled', false);
+                                $('#J-download-script').css({background: "background: rgba(255,90,90,1)"});
+                                //设置背景
+                                $("#J-down-code").focus();
+                            }
+                        },
+                        error: function(xhr, type){
+                            $('#J-download-script').prop('disabled', false);
+                            $('#J-download-script').css({background: "background: rgba(255,90,90,1)"});
+                            $('#J-result .longding').addClass('hide').removeClass('show');
+                            $('#J-result .success').addClass('hide').removeClass('show');
+                            $('#J-result .error').text("网络错误，请刷新后再试").addClass('show').removeClass('hide');
+                            errors('错误',xhr)
+                        }
+                    })
+                }else{
+                    errors('错误',"网络错误，请刷新后再试")
+                    $('#J-result .longding').addClass('hide').removeClass('show');
+                    $('#J-result .success').addClass('hide').removeClass('show');
+                    $('#J-result .error').text("网络错误，请刷新后再试").addClass('show').removeClass('hide');
+                }
+            } else {
+                errors('错误',"验证码无效")
+                $('#J-result .error').text("验证码无效").addClass('show').removeClass('hide');
+            }
+        })
+        $('#J-close').click(function () {
+            gtag(
+                'event',
+                '关闭',
+                {
+                    'event_category': '关闭弹框',
+                    'event_label': "index" == 'articles.detail' ? '文章中关闭' : '扩展中关闭'
+                }
+            );
+            $('#J-modal').addClass('hide');
+        });
+        $('#J-close-down_script').click(function () {
+            GetDownLoadLinkTj('获取油猴地址','关闭弹框')
+            $('#J-modal-down').addClass('hide');
+        });
+        $('#J-modal-down').click(function () {
+            $(this).addClass('hide');
+        });
+        $('#J-modal').click(function () {
+            $('#J-modal').addClass('hide');
+        });
+        $('#J_down_link_close').click(function () {
+            $('#J_down_link_modal').addClass('hide');
+        });
+        $('#J_down_link_modal').click(function () {
+            $(this).addClass('hide');
+        });
+        $('.e-modal').click(function (e) {
+            e.stopPropagation();
+        });
+        function ToCDB(str) { 
+            var tmp = ""; 
+            for(var i=0;i<str.length;i++){ 
+                if (str.charCodeAt(i) == 12288){
+                    tmp += String.fromCharCode(str.charCodeAt(i)-12256);
+                    continue;
+                }
+                if(str.charCodeAt(i) > 65280 && str.charCodeAt(i) < 65375){ 
+                    tmp += String.fromCharCode(str.charCodeAt(i)-65248); 
+                } 
+                else{ 
+                    tmp += String.fromCharCode(str.charCodeAt(i)); 
+                } 
+            } 
+            return tmp 
+        } 
+        //立即下载
+        $('#J-download').on('click', function() {
+            $('#J-result .longding').removeClass('show').removeClass('hide').addClass('hide');
+            $('#J-result .success').removeClass('show').removeClass('hide').addClass('hide');
+            $('#J-result .error').removeClass('show').removeClass('hide').addClass('hide');
+            //获取验证码
+            var code = ToCDB($("#J-yz-code").val().trim());
+            var redirect = $('#J-modal').attr("data-redirect");
+            var chrome_id = $('#J-result').attr("data-chrome-id");
+            var sort_name = $('#J-result').attr("data-sort-name");
+            var infinity_words = $('#J-result').attr("data-infinity-words");
+            //检测验证码
+            if (code.length !== 0 && code.length == 6) {
+                //加载
+                $('#J-result').removeClass('visibit');
+                //设置禁用
+                $('#J-download').attr('disabled', 'disabled');
+                //设置背景
+                $('#J-download').css({background: "rgb(255,90,90,0.8)"});
+                $("#J-result .longding").removeClass("hide").addClass("show");
+                post_uri = "https://www.extfans.com/extension/download/__CHROME_ID__/";
+                post_uri = post_uri.replace('__CHROME_ID__', chrome_id);
+                downTj('下载', '开始下载');
+                //开始加载
+                if(navigator.onLine){
+                    //发送请求
+                    $.ajax({
+                        type: 'POST',
+                        url: post_uri,
+                        data: {code:code},
+                        dataType: 'json',
+                        timeout: 3000,
+                        success: function(res){
+                            //成功
+                            if(res.state){
+                                var downUrl = res.data['download_link'];
+                                window.location = downUrl;
+                                $.cookie("wechat_download_codes", code, {path: '/', expires: new Date(res.data['expire_time']*1000)});
+                                if (parseInt(redirect) > 0) {
+                                    setTimeout(function(){
+                                        var installation_uri = "https://www.extfans.com/installation/?chrome_id=__CHROME_ID__&s=__SORT_NAME__";
+                                        installation_uri = installation_uri.replace('__CHROME_ID__', chrome_id);
+                                        installation_uri = installation_uri.replace('__SORT_NAME__', sort_name);
+                                        window.location.href= installation_uri;
+                                    },300)
+                                } else {
+                                    $('#J-modal').addClass('hide');
+                                    $('#J-result .success').addClass('hide').removeClass('show');
+                                }
+                            }else{
+                                // 验证码错误的时候
+                                $('#J-result .longding').addClass('hide').removeClass('show');
+                                $('#J-result .success').addClass('hide').removeClass('show');
+                                $('#J-result .error').text(res.msg).addClass('show').removeClass('hide');
+                                //加载
+                                $('#J-result').removeClass('visibit').removeClass('visibit');
+                                //设置禁用
+                                $('#J-download').prop('disabled', false);
+                                $('#J-download').css({background: "background: rgba(255,90,90,1)"});
+                                //设置背景
+                                $("#J-yz-code").focus();
+                            }
+                        },
+                        error: function(xhr, type){
+                            $('#J-download').prop('disabled', false);
+                            $('#J-download').css({background: "background: rgba(255,90,90,1)"});
+                            $('#J-result .longding').addClass('hide').removeClass('show');
+                            $('#J-result .success').addClass('hide').removeClass('show');
+                            $('#J-result .error').text("网络错误，请刷新后再试").addClass('show').removeClass('hide');
+                            errors('错误',xhr)
+                        }
+                    })
+                }else{
+                    errors('错误',"网络错误，请刷新后再试")
+                    $('#J-result .longding').addClass('hide').removeClass('show');
+                    $('#J-result .success').addClass('hide').removeClass('show');
+                    $('#J-result .error').text("网络错误，请刷新后再试").addClass('show').removeClass('hide');
+                }
+            } else {
+                errors('错误',"验证码无效")
+                $('#J-result .error').text("验证码无效").addClass('show').removeClass('hide');
+            }
+        });
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-121060027-1', {
+            transport_type: 'beacon',
+        });
+        function gaDl (chrome_id, infinity_words) {
+            var extfansCrxUtm = {
+                from: 'extfans',
+                crxId: chrome_id,
+                desc: infinity_words,
+            };
+            document.cookie = 'extfans_crx_utm=' + encodeURIComponent(JSON.stringify(extfansCrxUtm)) + '; domain=extfans.com; path=/; max-age=600';
+            if (extfansCrxUtm.crxId !== 'nnnkddnnlpamobajfibfdgfnbcnkgngh') {
+                gtag(
+                    'event',
+                    extfansCrxUtm.desc,
+                    {
+                        'event_category': '下载',
+                        'event_label': '直接下载'
+                    }
+                );
+            }
+        }
+        function searchGa (word) {
+            gtag(
+                'event',
+                word,
+                {
+                    'event_category': '搜索',
+                    'event_label': '搜索'
+                }
+            );
+        };
+        $('.nav ul li').click(function(){
+            var name = $(this).find('a').eq(0).text()
+            gtag(
+                'event',
+                name,
+                {
+                    'event_category': 'menu-click',
+                    'event_label': '菜单点击'
+                }
+            );
+        })
+        $('.subnav a').click(function(e){
+            var parentName = $(this).parents('div').find('a').eq(0).text();
+            var name = $(this).text();
+            var info = parentName + '下面的'+ name
+            gtag(
+                'event',
+                name,
+                {
+                    'event_category': 'menu-click',
+                    'event_label': '二级菜单点击'
+                }
+            );
+        })
+        function GetDownLoadLinkTj(name,label){
+            gtag(
+                'event',
+                name,
+                {
+                    'event_category': 'click-download',
+                    'event_label': label,
+                }
+            );
+        }
+        function downTj(name,label){
+            gtag(
+                'event',
+                name,
+                {
+                    'event_category': 'click-download',
+                    'event_label': label,
+                }
+            );
+        }
+        function errors(name,label){
+            gtag(
+                'event',
+                name,
+                {
+                    'event_category': 'error',
+                    'event_label': label,
+                }
+            );
+        }
+        $('.operate-install').click(function(){
+            var name = $(this).text()
+            gtag(
+                'event',
+                name,
+                {
+                    'event_category': 'click',
+                    'event_label': '安装跳转'
+                }
+            );
+        })
+        $('.operate-store').click(function(){
+            var name = $(this).text()
+            gtag(
+                'event',
+                name,
+                {
+                    'event_category': 'click',
+                    'event_label': '跳转谷歌商店'
+                }
+            );
+        })
+        $('.show-more').click(function(){
+            $('.ext-detail-text').css('height','auto');
+            $('.more').remove();
+            var name = $(this).text()
+            gtag(
+                'event',
+                name,
+                {
+                    'event_category': 'click',
+                    'event_label': '查看更多'
+                }
+            );
+        })
+        $('.i-banner-right').on('click','div',function(){
+            gtag(
+                'event',
+                'banner按钮',
+                {
+                    'event_category': 'click',
+                    'event_label': 'banner按钮'
+                }
+            );
+        })
+        $('.i-banner-imgview').on('click','a',function(){
+            gtag(
+                'event',
+                'banner大图',
+                {
+                    'event_category': 'click',
+                    'event_label': 'banner跳转'
+                }
+            );
+        })
+        $('.lookMore').on('click','a',function(){
+            var name = $(this).text();
+            var label = null;
+            if(name == '查看全部标签'){
+                label= '查看全部标签'
+            }else{
+                label= '查看全部搜索词'
+            }
+            gtag(
+                'event',
+                name,
+                {
+                    'event_category': 'click',
+                    'event_label': label
+                }
+            );
+        })
+        $('.hot-exts ol a').click(function(){
+            var name = $(this).text();
+            gtag(
+                'event',
+                name,
+                {
+                    'event_category': 'click',
+                    'event_label': '底部热门插件'
+                }
+            );
+        })
+    </script> 
+  <script>
+        //账户登录
+        function auth_login() {
+            //显示弹窗
+            $("#J_login_modal").removeClass('hide');
+        }
+        //登录触发
+        $("body").find(".auth_to_login_trigger").click(function () {
+            //执行登录
+            auth_login();
+        });
+        $('#J-qq—login').click(function(){
+            winObj = window.open($(this).attr('data-url'),'','width=665,height=515,top=100,left=100,menubar=no,toolbar=no,status=no')
+        })
+        $('#J-wechat—login').click(function(){
+            winObj = window.open($(this).attr('data-url'),'','width=665,height=515,top=100,left=100,menubar=no,toolbar=no,status=no')
+        })
+        $('.signout').click(function(){
+            $('#J-quit').removeClass('hide')
+        })
+        $('#J-close-quit').click(function(){
+            $('#J-quit').addClass('hide')
+        })
+        $('#J-quit').click(function(){
+            $(this).addClass('hide')
+        })
+        $('#J-cancel-quit').click(function(){
+            $('#J-quit').addClass('hide')
+        })
+    </script> 
+  <script>
+            (function(){
+                var bp = document.createElement('script');
+                var curProtocol = window.location.protocol.split(':')[0];
+                if (curProtocol === 'https'){
+                    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+                }else{
+                    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                }
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(bp, s);
+            })();
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?ccd369c076594bbc189bd23d92216a6a";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+            })();
+        </script> 
+ </body>
+</html>
